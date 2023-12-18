@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --bg-color: #e5e5e5;
+  --main-primary: #ffb400;
+  --secondary-primary: #ffb400;
+  --section-heading-color: #2b2b2b;
+  --text-light-color: #767676;
+  --light-heading-color: #2b2b2b;
+  --white-color: #fff;
+  --light-transparent: #f0f0f6;
+  --primary-font: "Inter", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: var(--primary-font);
+}
+
+/* Style for the header section */
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: var(--white-color);
+  justify-content: space-between;
+  gap: 30px;
+  height: 50px;
+  align-items: center;
+}
+.navigation h2 {
+  grid-column: span 3;
+  margin-left: 20px;
+}
+
+.navigation nav {
+  display: flex;
+  grid-column: span 8;
+  justify-self: center;
+}
+
+.navigation nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--light-heading-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: var(--main-primary);
+  transition: 0.5s;
+}
+
+/* Main Section CSS Here */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.grid .profile-summary {
+  grid-column: span 3;
+  padding-top: 50px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#profile-pic {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-summary h2 {
+  color: var(--light-heading-color);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.profile-summary p {
+  color: var(--text-light-color);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.social-icons img {
+  background-color: var(--secondary-primary);
+  padding: 10px;
+  border-radius: 100%;
+}
+.profile-bio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid var(--text-light-color);
+  border-bottom: 1px solid var(--text-light-color);
+  margin-top: 15px;
+  padding-top: 10px;
+}
+.profile-bio .highlighted {
+  background-color: var(--secondary-primary);
+  color: var(--light-heading-color);
+  font-size: 16px;
+  padding: 5px;
+}
+
+#freelance {
+  color: #7eb942;
+}
+
+.break-line {
+  margin: 8px 0px;
+}
+
+
+/* main profile hero styles */
+.grid .main-profile {
+  grid-column: span 9;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding-left: 50px;
+  height: fit-content;
+
+}
+
+.main-profile .text h2{
+  font-weight: bold;
+  color: var(--light-heading-color);
+  font-size: 48px;
+}
+
+.main-profile .text p{
+  color: var(--text-light-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+   width: 80%;
+   margin-top: 30px;
+}
+
+.hero-button{
+  background-color: var(--main-primary);
+  color: var(--light-heading-color);
+  padding: 12px 30px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.banner-img{
+  object-fit: fill;
+}
+
+.ui-progressbar .ui-progressbar-value{
+  background-color: var(--main-primary) !important;
+  margin: 0 !important;
+
+
+}
+
+.ui-widget.ui-widget-content{
+  background-color: var(--light-transparent);
+  border: none !important;
+  height: 10px !important;
+  width: 100%;
+}
+
+.skills-section{
+  width: 90%;
+  background-color: #7eb942;
+}
