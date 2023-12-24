@@ -17,7 +17,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
             $table->rememberToken();
+            $table->text('device_token')->nullable(); // Add device token in users migration file.
             $table->timestamps();
         });
     }
